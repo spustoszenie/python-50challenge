@@ -29,3 +29,18 @@ def age_in_minutes():
 
 
 print(age_in_minutes())
+
+##########   Bonus datetime   ########
+
+from datetime import datetime
+
+def age_in_minutes():
+    rok_urodzenia = int(input("Podaj rok urodzenia: "))
+    miesiac_urodzenia = int(input("Podaj miesiac urodzenia: "))
+    dzien_urodzenia = int(input("Podaj dzien urodzenia: "))
+    data_uro_dokladnie = datetime(rok_urodzenia,miesiac_urodzenia,dzien_urodzenia)
+    teraz = datetime.now()
+    wiek_w_minutach = (teraz - data_uro_dokladnie).total_seconds() / 60
+    return wiek_w_minutach
+
+# print(age_in_minutes())
