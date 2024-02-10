@@ -9,7 +9,6 @@
 # Your function should return the user's age in minutes. For example, if someone enters 1930, as their year of birth your function should return:
 # You are 48,355,200 minutes old.
 
-
 def age_in_minutes():
     
     while True:
@@ -26,7 +25,6 @@ def age_in_minutes():
             ile_lat = 2024 - int(data_urodzenia)
             wiek_w_minutach = ile_lat*60*24*365
             return wiek_w_minutach
-
 
 print(age_in_minutes())
 
