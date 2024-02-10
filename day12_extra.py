@@ -43,4 +43,4 @@ def age_in_minutes():
     wiek_w_minutach = (teraz - data_uro_dokladnie).total_seconds() / 60
     return wiek_w_minutach
 
-# print(age_in_minutes())
+print(age_in_minutes())
