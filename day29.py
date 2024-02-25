@@ -12,10 +12,10 @@ def middle_figgure(a:str, b:str):
     joined = a+b
     bez_spacji = joined.replace(' ', '')
     
-    if len(bez_spacji) / 2 == 0:
+    if len(bez_spacji) % 2 == 0:
         print(" no middle figure")
     else:
-        srodkowy = int(len(bez_spacji) / 2 - 0.5)
+        srodkowy = int(len(bez_spacji) // 2)
         return bez_spacji[srodkowy]
 
 print(middle_figgure(abc, xyz))
